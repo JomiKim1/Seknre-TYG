@@ -303,7 +303,8 @@
     padding: 2px 8px; border-radius: 3px;
     margin-left: auto; letter-spacing: 0.03em;
   }
-  .pos-front { background: var(--blue-dim); color: var(--blue); border: 1px solid rgba(91,156,246,0.3); }
+  .pos-front { background: rgba(91,156,246,0.12) !important; color: #5b9cf6 !important; border: 1px solid rgba(91,156,246,0.3) !important; }
+  span.hero-position[style*="5b9cf6"] { background: rgba(91,156,246,0.12) !important; color: #5b9cf6 !important; border: 1px solid rgba(91,156,246,0.3) !important; }
   .pos-back { background: var(--accent-dim); color: var(--accent-bright); border: 1px solid rgba(217,48,37,0.25); }
 
   .hero-war-body { padding: 14px 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -688,7 +689,7 @@
           <div class="slot-grid">
             <div class="slot-field"><label>전열 / 후열</label><select id="position1"><option value="">— 선택 —</option><option value="전열">전열</option><option value="후열">후열</option></select></div><div class="slot-field"><label>장비</label><select id="equip1"><option value="">— 선택 —</option><option value="복수자">복수자</option><option value="조율자">조율자</option><option value="수문장">수문장</option><option value="암살자">암살자</option><option value="성기사">성기사</option></select></div>
             <div class="slot-field slot-field-full"><label>세부 옵션</label><div class="equip-detail-row"><input type="text" id="equipDetail1_1" placeholder="치피" maxlength="3"><input type="text" id="equipDetail1_2" placeholder="치피" maxlength="3"><input type="text" id="equipDetail1_3" placeholder="공" maxlength="3"><input type="text" id="equipDetail1_4" placeholder="공" maxlength="3"></div></div>
-            <div class="slot-field"><label>비고</label><input type="text" id="note1" placeholder="예: 치확 100% 추천"></div>
+            <div class="slot-field slot-field-full"><label>비고</label><textarea id="note1" rows="2" placeholder="예: 치확 100% 추천&#10;줄바꿈 가능" style="resize:vertical"></textarea></div>
             <div class="slot-field"><label>속공 순서</label><input type="text" id="speed1" placeholder="예: 1순위"></div>
           </div>
         </div>
@@ -710,7 +711,7 @@
           <div class="slot-grid">
             <div class="slot-field"><label>전열 / 후열</label><select id="position2"><option value="">— 선택 —</option><option value="전열">전열</option><option value="후열">후열</option></select></div><div class="slot-field"><label>장비</label><select id="equip2"><option value="">— 선택 —</option><option value="복수자">복수자</option><option value="조율자">조율자</option><option value="수문장">수문장</option><option value="암살자">암살자</option><option value="성기사">성기사</option></select></div>
             <div class="slot-field slot-field-full"><label>세부 옵션</label><div class="equip-detail-row"><input type="text" id="equipDetail2_1" placeholder="치피" maxlength="3"><input type="text" id="equipDetail2_2" placeholder="치피" maxlength="3"><input type="text" id="equipDetail2_3" placeholder="공" maxlength="3"><input type="text" id="equipDetail2_4" placeholder="공" maxlength="3"></div></div>
-            <div class="slot-field"><label>비고</label><input type="text" id="note2" placeholder="예: 치확 100% 추천"></div>
+            <div class="slot-field slot-field-full"><label>비고</label><textarea id="note2" rows="2" placeholder="예: 치확 100% 추천&#10;줄바꿈 가능" style="resize:vertical"></textarea></div>
             <div class="slot-field"><label>속공 순서</label><input type="text" id="speed2" placeholder="예: 1순위"></div>
           </div>
         </div>
@@ -732,7 +733,7 @@
           <div class="slot-grid">
             <div class="slot-field"><label>전열 / 후열</label><select id="position3"><option value="">— 선택 —</option><option value="전열">전열</option><option value="후열">후열</option></select></div><div class="slot-field"><label>장비</label><select id="equip3"><option value="">— 선택 —</option><option value="복수자">복수자</option><option value="조율자">조율자</option><option value="수문장">수문장</option><option value="암살자">암살자</option><option value="성기사">성기사</option></select></div>
             <div class="slot-field slot-field-full"><label>세부 옵션</label><div class="equip-detail-row"><input type="text" id="equipDetail3_1" placeholder="치피" maxlength="3"><input type="text" id="equipDetail3_2" placeholder="치피" maxlength="3"><input type="text" id="equipDetail3_3" placeholder="공" maxlength="3"><input type="text" id="equipDetail3_4" placeholder="공" maxlength="3"></div></div>
-            <div class="slot-field"><label>비고</label><input type="text" id="note3" placeholder="예: 치확 100% 추천"></div>
+            <div class="slot-field slot-field-full"><label>비고</label><textarea id="note3" rows="2" placeholder="예: 치확 100% 추천&#10;줄바꿈 가능" style="resize:vertical"></textarea></div>
             <div class="slot-field"><label>속공 순서</label><input type="text" id="speed3" placeholder="예: 1순위"></div>
           </div>
         </div>
@@ -754,7 +755,7 @@
           <div class="slot-grid">
             <div class="slot-field"><label>전열 / 후열</label><select id="position4"><option value="">— 선택 —</option><option value="전열">전열</option><option value="후열">후열</option></select></div><div class="slot-field"><label>장비</label><select id="equip4"><option value="">— 선택 —</option><option value="복수자">복수자</option><option value="조율자">조율자</option><option value="수문장">수문장</option><option value="암살자">암살자</option><option value="성기사">성기사</option></select></div>
             <div class="slot-field slot-field-full"><label>세부 옵션</label><div class="equip-detail-row"><input type="text" id="equipDetail4_1" placeholder="치피" maxlength="3"><input type="text" id="equipDetail4_2" placeholder="치피" maxlength="3"><input type="text" id="equipDetail4_3" placeholder="공" maxlength="3"><input type="text" id="equipDetail4_4" placeholder="공" maxlength="3"></div></div>
-            <div class="slot-field"><label>비고</label><input type="text" id="note4" placeholder="예: 치확 100% 추천"></div>
+            <div class="slot-field slot-field-full"><label>비고</label><textarea id="note4" rows="2" placeholder="예: 치확 100% 추천&#10;줄바꿈 가능" style="resize:vertical"></textarea></div>
             <div class="slot-field"><label>속공 순서</label><input type="text" id="speed4" placeholder="예: 1순위"></div>
           </div>
         </div>
@@ -776,7 +777,7 @@
           <div class="slot-grid">
             <div class="slot-field"><label>전열 / 후열</label><select id="position5"><option value="">— 선택 —</option><option value="전열">전열</option><option value="후열">후열</option></select></div><div class="slot-field"><label>장비</label><select id="equip5"><option value="">— 선택 —</option><option value="복수자">복수자</option><option value="조율자">조율자</option><option value="수문장">수문장</option><option value="암살자">암살자</option><option value="성기사">성기사</option></select></div>
             <div class="slot-field slot-field-full"><label>세부 옵션</label><div class="equip-detail-row"><input type="text" id="equipDetail5_1" placeholder="치피" maxlength="3"><input type="text" id="equipDetail5_2" placeholder="치피" maxlength="3"><input type="text" id="equipDetail5_3" placeholder="공" maxlength="3"><input type="text" id="equipDetail5_4" placeholder="공" maxlength="3"></div></div>
-            <div class="slot-field"><label>비고</label><input type="text" id="note5" placeholder="예: 치확 100% 추천"></div>
+            <div class="slot-field slot-field-full"><label>비고</label><textarea id="note5" rows="2" placeholder="예: 치확 100% 추천&#10;줄바꿈 가능" style="resize:vertical"></textarea></div>
             <div class="slot-field"><label>속공 순서</label><input type="text" id="speed5" placeholder="예: 1순위"></div>
           </div>
         </div>
@@ -864,7 +865,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#5b9cf6;border:1px solid #5b9cf633;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -890,7 +891,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#5b9cf6;border:1px solid #5b9cf633;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -916,7 +917,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#5b9cf6;border:1px solid #5b9cf633;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -942,7 +943,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f5a623;border:1px solid #f5a62333;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1024,7 +1025,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#5b9cf6;border:1px solid #5b9cf633;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1050,7 +1051,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f5a623;border:1px solid #f5a62333;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1076,7 +1077,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f5a623;border:1px solid #f5a62333;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1193,7 +1194,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#5b9cf6;border:1px solid #5b9cf633;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1217,7 +1218,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f5a623;border:1px solid #f5a62333;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1241,7 +1242,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#5b9cf6;border:1px solid #5b9cf633;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1265,7 +1266,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f5a623;border:1px solid #f5a62333;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1293,7 +1294,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1317,7 +1318,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#5b9cf6;border:1px solid #5b9cf633;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1522,7 +1523,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(217,48,37,0.15);color:#e24b4a;border:1px solid rgba(217,48,37,0.3);margin-left:2px">공격형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1546,7 +1547,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1570,7 +1571,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1646,7 +1647,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1670,7 +1671,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f5a623;border:1px solid #f5a62333;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1694,7 +1695,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f5a623;border:1px solid #f5a62333;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1803,7 +1804,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(217,48,37,0.15);color:#e24b4a;border:1px solid rgba(217,48,37,0.3);margin-left:2px">공격형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1827,7 +1828,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(217,48,37,0.15);color:#e24b4a;border:1px solid rgba(217,48,37,0.3);margin-left:2px">공격형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1851,7 +1852,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(217,48,37,0.15);color:#e24b4a;border:1px solid rgba(217,48,37,0.3);margin-left:2px">공격형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1875,7 +1876,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1927,7 +1928,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1951,7 +1952,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f5a623;border:1px solid #f5a62333;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1975,7 +1976,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f5a623;border:1px solid #f5a62333;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -1999,7 +2000,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2249,7 +2250,10 @@
   </div>
   <div id="tab-war" class="tab-content">
     <h2>공성전 공략</h2>
-    <button class="add-strategy-btn" onclick="openStrategyModal()" style="display:block;margin-left:auto">+ 공략 추가</button>
+    <div style="display:flex;justify-content:flex-end;gap:8px;margin-bottom:0">
+      <button class="add-strategy-btn" onclick="exportHTML()" style="background:var(--card-bg);border:1px solid var(--border2);color:var(--text-muted)">⬇ HTML 내보내기</button>
+      <button class="add-strategy-btn" onclick="openStrategyModal()">+ 공략 추가</button>
+    </div>
     <p class="subtitle">요일별 공성전 영웅 세팅 및 스킬 순서</p>
 
     <!-- ★ 요일 탭 버튼 — 데이터 없는 요일은 class에 no-data 추가 -->
@@ -2319,7 +2323,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#4a9eff;border:1px solid #4a9eff33;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2352,7 +2356,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(180,120,60,0.15);color:#b4783c;border:1px solid #b4783c33;margin-left:2px">방어형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2384,7 +2388,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2416,7 +2420,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2533,7 +2537,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#4a9eff;border:1px solid #4a9eff33;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2557,7 +2561,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2581,7 +2585,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2605,7 +2609,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2715,7 +2719,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#4a9eff;border:1px solid #4a9eff33;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2741,7 +2745,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(226,75,74,0.15);color:#e24b4a;border:1px solid rgba(226,75,74,0.3);margin-left:2px">공격형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2767,7 +2771,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2793,7 +2797,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2931,7 +2935,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(226,75,74,0.15);color:#e24b4a;border:1px solid #e24b4a33;margin-left:2px">공격형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2957,7 +2961,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -2983,7 +2987,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3121,7 +3125,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3147,7 +3151,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3173,7 +3177,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3309,7 +3313,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(226,75,74,0.15);color:#e24b4a;border:1px solid #e24b4a33;margin-left:2px">공격형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3335,7 +3339,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(174,110,255,0.15);color:#ae6eff;border:1px solid #ae6eff33;margin-left:2px">만능형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3361,7 +3365,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3471,7 +3475,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#4a9eff;border:1px solid #4a9eff33;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3497,7 +3501,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(74,158,255,0.15);color:#4a9eff;border:1px solid #4a9eff33;margin-left:2px">마법형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3523,7 +3527,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(226,75,74,0.15);color:#e24b4a;border:1px solid #e24b4a33;margin-left:2px">공격형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3549,7 +3553,7 @@
           <span class="toggle-icon">▼</span>
         </div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:rgba(240,192,64,0.15);color:#f0c040;border:1px solid #f0c04033;margin-left:2px">지원형</div>
-          <span class="hero-position pos-front">전열</span>
+          <span class="hero-position" style="background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)">전열</span>
         </div>
         <div class="hero-war-body">
           <div class="war-info-block">
@@ -3617,6 +3621,22 @@
 </main>
 
 <script>
+  // ── 내보내기 데이터 (GitHub 업로드용) ──────────────────
+  const PRELOADED_DATA = {
+    userStrategies: null,
+    presetOverrides: null,
+    noticeContent: null,
+  };
+  // 페이지 로드 시 PRELOADED_DATA가 있으면 localStorage에 주입
+  (function() {
+    if (PRELOADED_DATA.userStrategies !== null)
+      localStorage.setItem('userStrategies', JSON.stringify(PRELOADED_DATA.userStrategies));
+    if (PRELOADED_DATA.presetOverrides !== null)
+      localStorage.setItem('presetOverrides', JSON.stringify(PRELOADED_DATA.presetOverrides));
+    if (PRELOADED_DATA.noticeContent !== null)
+      localStorage.setItem('noticeContent', PRELOADED_DATA.noticeContent);
+  })();
+  // ─────────────────────────────────────────────────────
   function switchTab(name) {
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('nav button').forEach(el => el.classList.remove('active'));
@@ -3669,16 +3689,86 @@
       document.getElementById('pwInput').focus();
     }
   }
+
+  function exportHTML() {
+    const pw = document.getElementById('pwInput') ? null : null;
+    // 비밀번호 확인용 모달 재활용
+    exportPending = true;
+    document.getElementById('pwModal').style.display = 'flex';
+    document.getElementById('pwInput').value = '';
+    document.getElementById('pwError').style.display = 'none';
+  }
+
+  let exportPending = false;
+
+  // submitPassword 함수를 export도 처리하도록 수정
+  const _origSubmitPassword = submitPassword;
+  submitPassword = function() {
+    const pw = document.getElementById('pwInput').value;
+    if (exportPending) {
+      if (pw !== '12180714') {
+        document.getElementById('pwError').style.display = 'block';
+        document.getElementById('pwInput').value = '';
+        document.getElementById('pwInput').focus();
+        return;
+      }
+      exportPending = false;
+      document.getElementById('pwModal').style.display = 'none';
+      document.getElementById('pwError').style.display = 'none';
+      _doExportHTML();
+    } else {
+      _origSubmitPassword();
+    }
+  };
+
+  function _doExportHTML() {
+    // 현재 페이지 HTML 가져오기
+    let html = document.documentElement.outerHTML;
+
+    // localStorage 데이터를 HTML에 주입하는 스크립트 삽입
+    const userStrategies = localStorage.getItem('userStrategies') || '[]';
+    const presetOverrides = localStorage.getItem('presetOverrides') || '{}';
+    const noticeContent = localStorage.getItem('noticeContent') || '';
+
+    const injectScript = `<script>
+  (function() {
+    const us = ${JSON.stringify(userStrategies)};
+    const po = ${JSON.stringify(presetOverrides)};
+    const nc = ${JSON.stringify(noticeContent)};
+    if (us && us !== '[]') localStorage.setItem('userStrategies', us);
+    if (po && po !== '{}') localStorage.setItem('presetOverrides', po);
+    if (nc) localStorage.setItem('noticeContent', nc);
+  })();
+<\/script>`;
+
+    // </body> 바로 앞에 삽입
+    html = html.replace('</body>', injectScript + '\n</body>');
+
+    // 다운로드
+    const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'index.html';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
   function submitPassword() {
     const pw = document.getElementById('pwInput').value;
+    const mode = document.getElementById('pwModal').dataset.mode || 'notice';
     if (pw === '12180714') {
       document.getElementById('pwModal').style.display = 'none';
       document.getElementById('pwError').style.display = 'none';
-      document.getElementById('noticeTextarea').value = document.getElementById('noticeText').textContent;
-      document.getElementById('noticeDisplay').style.display = 'none';
-      document.getElementById('noticeTextarea').style.display = '';
-      document.getElementById('noticeSaveBtn').style.display = '';
-      document.querySelector('.notice-edit-btn').textContent = '취소';
+      document.getElementById('pwModal').dataset.mode = '';
+      if (mode === 'export') {
+        exportHTML();
+      } else {
+        document.getElementById('noticeTextarea').value = document.getElementById('noticeText').textContent;
+        document.getElementById('noticeDisplay').style.display = 'none';
+        document.getElementById('noticeTextarea').style.display = '';
+        document.getElementById('noticeSaveBtn').style.display = '';
+        document.querySelector('.notice-edit-btn').textContent = '취소';
+      }
     } else {
       document.getElementById('pwError').style.display = 'block';
       document.getElementById('pwInput').value = '';
@@ -3866,16 +3956,20 @@
     const heroCards = s.heroes.map(h => {
       const equipIcon = EQUIP_ICONS[h.equip] ? `<img src="${EQUIP_ICONS[h.equip]}" style="width:32px;height:32px;object-fit:contain;vertical-align:middle;mix-blend-mode:screen"> ` : '';
       const equipLine = h.equip ? `${equipIcon}<span class="tag">${h.equip}</span><br>${h.equipDetail || ''}` : (h.equipDetail || '');
+      const posStyle = h.position === '후열'
+        ? 'background:rgba(226,75,74,0.15);color:#e24b4a;border:1px solid rgba(226,75,74,0.3)'
+        : 'background:rgba(91,156,246,0.12);color:#5b9cf6;border:1px solid rgba(91,156,246,0.3)';
+      const posSpan = h.position ? `<span class="hero-position" style="${posStyle}">${h.position}</span>` : '';
       return `<div class="hero-war-card" data-type="${h.type}">
         <div class="hero-war-header" onclick="toggleHero(this.closest('.hero-war-card'))">
           <img class="hero-avatar" src="${h.src}" style="width:55px;height:55px;border-radius:6px;object-fit:cover;flex-shrink:0">
           <div class="hero-name">${h.name}<span class="toggle-icon">▼</span></div>
           <div style="font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;${h.typeStyle};margin-left:2px">${h.type}</div>
-          ${h.position ? `<span class="hero-position${h.position === '후열' ? '" style="background:rgba(226,75,74,0.15);color:#e24b4a;border:1px solid rgba(226,75,74,0.3)' : ' pos-front'}">${h.position}</span>` : ''}
+          ${posSpan}
         </div>
         <div class="hero-war-body">
           <div class="war-info-block"><div class="war-info-label">장비</div><div class="war-info-value">${equipLine}</div></div>
-          <div class="war-info-block"><div class="war-info-label">비고</div><div class="war-info-value">${h.note || '—'}</div></div>
+          <div class="war-info-block"><div class="war-info-label">비고</div><div class="war-info-value" style="white-space:pre-wrap">${h.note || '—'}</div></div>
           <div class="war-info-block"><div class="war-info-label">속공 순서</div><div class="war-info-value">${h.speed || '—'}</div></div>
         </div></div>`;
     }).join('');
@@ -3983,7 +4077,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치피 / 치피 / 공 / 공",
-        "note": "약공 46% 필수",
+        "note": "약공 46% 필수\n치피 최대한 챙기기\n6초월 필수\n속공 29 이상 필수",
         "speed": "1~2순위"
       },
       {
@@ -3992,7 +4086,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n약공 46% 필수\n치피 최대한 챙기기",
         "speed": "1~2순위"
       },
       {
@@ -4001,7 +4095,7 @@
         "position": "전열",
         "equip": "암살자",
         "equipDetail": "치확 / 치확 / 받 / 받",
-        "note": "암살자 or 수문장 or 복수자",
+        "note": "암살자 or 수문장 or 복수자\n치확 100% 챙기기",
         "speed": "속공템 없음"
       },
       {
@@ -4010,7 +4104,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기",
         "speed": "속공템 없음"
       },
       {
@@ -4019,7 +4113,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기",
         "speed": "속공템 없음"
       }
     ],
@@ -4037,7 +4131,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "약공 46% 필수",
+        "note": "약공 46% 필수\n치피 최대한 챙기기\n6초월 필수\n속공 29 이상 필수",
         "speed": "1~2순위"
       },
       {
@@ -4046,7 +4140,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n약공 46% 필수\n치피 최대한 챙기기",
         "speed": "1~2순위"
       },
       {
@@ -4055,7 +4149,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치확 / 받 / 받",
-        "note": "치확 100% 필수",
+        "note": "치확 100% 필수\n단단하게 세팅\n2초월 필수",
         "speed": "5순위"
       },
       {
@@ -4064,7 +4158,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n죽는 경우 권능 추천\n속공 25이상",
         "speed": "3~4순위"
       },
       {
@@ -4073,7 +4167,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n죽는 경우 권능 추천\n속공 25이상",
         "speed": "3~4순위"
       }
     ],
@@ -4091,7 +4185,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치피 / 치피 / 공 / 공",
-        "note": "약공 46% 필수",
+        "note": "약공 46% 필수\n치피 최대한 챙기기\n6초월 필수",
         "speed": "5순위"
       },
       {
@@ -4100,7 +4194,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n약공 46% 필수\n치피 최대한 챙기기",
         "speed": "4순위"
       },
       {
@@ -4109,7 +4203,7 @@
         "position": "전열",
         "equip": "수문장",
         "equipDetail": "방 / 방 / 막 / 받",
-        "note": "막기 확률 100% 가깝게",
+        "note": "막기 확률 100% 가깝게\n단단하게 세팅",
         "speed": "1~3순위"
       },
       {
@@ -4118,7 +4212,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 추천",
+        "note": "치확 100% 추천\n안전하게 하려면 성기사 세팅\n권능 추천",
         "speed": "1~3순위"
       },
       {
@@ -4127,7 +4221,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 추천",
+        "note": "치확 100% 추천\n치피 최대한 챙기기\n권능 추천",
         "speed": "1~3순위"
       }
     ],
@@ -4145,7 +4239,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n약공 19% 필수",
         "speed": "4순위"
       },
       {
@@ -4154,7 +4248,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n약공 19% 필수",
         "speed": "5순위"
       },
       {
@@ -4163,7 +4257,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치피 / 치피 / 받 / 받",
-        "note": "치확 73% 가깝게",
+        "note": "치확 73% 가깝게\n치피 최대한 챙기기",
         "speed": "1~3순위"
       },
       {
@@ -4172,7 +4266,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n권능 추천",
         "speed": "1~3순위"
       },
       {
@@ -4181,7 +4275,7 @@
         "position": "전열",
         "equip": "수문장",
         "equipDetail": "방 / 방 / 막 / 받",
-        "note": "막기 100% 추천",
+        "note": "막기 100% 추천\n탱템 아무거나 줘도 안죽음",
         "speed": "1~3순위"
       }
     ],
@@ -4199,7 +4293,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n약공 19% 필수",
         "speed": "5순위"
       },
       {
@@ -4208,7 +4302,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n약공 19% 필수",
         "speed": "4순위"
       },
       {
@@ -4217,7 +4311,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n권능 추천",
         "speed": "1~3순위"
       },
       {
@@ -4226,7 +4320,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기",
         "speed": "1~3순위"
       },
       {
@@ -4235,7 +4329,7 @@
         "position": "전열",
         "equip": "수문장",
         "equipDetail": "방 / 방 / 막 / 받",
-        "note": "막기 100% 추천",
+        "note": "막기 100% 추천\n탱템 아무거나 줘도 안죽음",
         "speed": "1~3순위"
       }
     ],
@@ -4253,7 +4347,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n약공 19% 필수",
         "speed": "4순위"
       },
       {
@@ -4262,7 +4356,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 최대한 챙기기\n약공 19% 필수",
         "speed": "5순위"
       },
       {
@@ -4271,7 +4365,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n죽는경우 받 / 받 챙기기\nor 권능 추천",
         "speed": "1~3순위"
       },
       {
@@ -4280,7 +4374,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n치피 230% 이상 추천\n치피 최대한 챙기기",
         "speed": "1~3순위"
       },
       {
@@ -4289,7 +4383,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치확 / 받 / 받",
-        "note": "치확 100% 필수",
+        "note": "치확 100% 필수\n단단하게 세팅\n복수자 없으면 수문장으로\n치확 100% 맞추기",
         "speed": "1~3순위"
       }
     ],
@@ -4307,7 +4401,7 @@
         "position": "",
         "equip": "복수자",
         "equipDetail": "치피 / 치피 / 공 / 공",
-        "note": "약공 46% 필수",
+        "note": "약공 46% 필수\n치피 최대한 챙기기\n치확도 챙기기",
         "speed": "5순위"
       },
       {
@@ -4316,7 +4410,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 치피 / 공 / 공",
-        "note": "치확 100% 가깝게",
+        "note": "치확 100% 가깝게\n약공 7% 필수(4초 이하만)\n치피 최대한 챙기기",
         "speed": "1~4순위"
       },
       {
@@ -4325,7 +4419,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 약확 / 공 / 공",
-        "note": "약공 100% 필수",
+        "note": "약공 100% 필수\n치확 최대한 챙기기\n소교보다 공 낮게",
         "speed": "1~4순위"
       },
       {
@@ -4334,7 +4428,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 약확 / 공 / 공",
-        "note": "약공 100% 필수",
+        "note": "약공 100% 필수\n치확 최대한 챙기기",
         "speed": "1~4순위"
       },
       {
@@ -4343,7 +4437,7 @@
         "position": "전열",
         "equip": "복수자",
         "equipDetail": "치확 / 약확 / 공 / 공",
-        "note": "약공 100% 필수",
+        "note": "약공 100% 필수\n치확 최대한 챙기기\n죽으면 공 / 받 or 받 / 받 세팅",
         "speed": "1~4순위"
       }
     ],
@@ -4424,7 +4518,7 @@
         posSpan + '</div>' +
         '<div class="hero-war-body">' +
         '<div class="war-info-block"><div class="war-info-label">장비</div><div class="war-info-value">' + equipLine + '</div></div>' +
-        '<div class="war-info-block"><div class="war-info-label">비고</div><div class="war-info-value">' + (h.note || '—') + '</div></div>' +
+        '<div class="war-info-block"><div class="war-info-label">비고</div><div class="war-info-value" style="white-space:pre-wrap">' + (h.note || '—') + '</div></div>' +
         '<div class="war-info-block"><div class="war-info-label">속공 순서</div><div class="war-info-value">' + (h.speed || '—') + '</div></div>' +
         '</div></div>';
     }).join('');
@@ -4440,6 +4534,79 @@
         '</div></div></div>';
     })() : '';
     return heroCards + skillBlock + formBlock;
+  }
+
+
+  function exportHTML() {
+    const pw = document.getElementById('pwInput') ? null : null; // 비밀번호는 이미 확인됨
+    const strategies = JSON.parse(localStorage.getItem('userStrategies') || '[]');
+    const overrides = JSON.parse(localStorage.getItem('presetOverrides') || '{}');
+    const notice = localStorage.getItem('noticeContent') || '';
+
+    // 현재 HTML 가져오기
+    let html = document.documentElement.outerHTML;
+
+    // PRELOADED_DATA 교체
+    const newData = `const PRELOADED_DATA = {
+    userStrategies: ${JSON.stringify(strategies)},
+    presetOverrides: ${JSON.stringify(overrides)},
+    noticeContent: ${JSON.stringify(notice)},
+  };`;
+    html = html.replace(/const PRELOADED_DATA = \{[\s\S]*?\};/, newData);
+
+    // 다운로드
+    const blob = new Blob([html], {type: 'text/html;charset=utf-8'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = '세나리버스-공략위키.html';
+    a.click();
+  }
+
+  function openExportWithAuth() {
+    // 기존 pwModal 재사용, 확인 시 exportHTML 실행
+    document.getElementById('pwModal').style.display = 'flex';
+    document.getElementById('pwInput').value = '';
+    document.getElementById('pwError').style.display = 'none';
+    document.getElementById('pwModal').dataset.mode = 'export';
+  }
+
+
+  function exportHTML() {
+    // localStorage 데이터 수집
+    const userStrategies = localStorage.getItem('userStrategies') || '[]';
+    const presetOverrides = localStorage.getItem('presetOverrides') || '{}';
+    const noticeContent = localStorage.getItem('noticeContent') || '';
+
+    // 현재 HTML 가져오기
+    let html = document.documentElement.outerHTML;
+
+    // 기존 inject 스크립트 제거 (중복 방지)
+    html = html.replace(/<script id="__injected_data__">[\s\S]*?<\/script>/, '');
+
+    // 데이터를 HTML에 주입 - </body> 바로 앞에 삽입
+    const injectScript = `<script id="__injected_data__">
+(function() {
+  if (!localStorage.getItem('userStrategies')) {
+    localStorage.setItem('userStrategies', ${JSON.stringify(userStrategies)});
+  }
+  if (!localStorage.getItem('presetOverrides')) {
+    localStorage.setItem('presetOverrides', ${JSON.stringify(presetOverrides)});
+  }
+  if (!localStorage.getItem('noticeContent')) {
+    localStorage.setItem('noticeContent', ${JSON.stringify(noticeContent)});
+  }
+})();
+<\/script>`;
+
+    html = html.replace('</body>', injectScript + '\n</body>');
+
+    // 다운로드
+    const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = '세나리버스-공략위키.html';
+    a.click();
+    URL.revokeObjectURL(a.href);
   }
 
   document.addEventListener('DOMContentLoaded', () => { renderUserStrategies(); renderPresetOverrides(); });
