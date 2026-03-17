@@ -443,6 +443,17 @@
   }
 
 
+
+  /* 토스트 알림 */
+  #saveToast {
+    position: fixed; bottom: 24px; right: 24px; z-index: 99999;
+    background: var(--card-bg); border: 1px solid var(--accent);
+    color: var(--white); padding: 12px 18px; border-radius: 10px;
+    font-size: 13px; box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    opacity: 0; transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s; pointer-events: none;
+  }
+  #saveToast.show { opacity: 1; transform: translateY(0); }
   /* 기존 공략 아코디언 */
   .preset-body { padding: 0 16px 16px; border-top: 1px solid var(--border2); }
   /* 유저 공략 리스트 */
@@ -647,6 +658,8 @@
         </div>
     </div>
   </div>
+
+  <div id="saveToast">✅ 저장 완료! 📥 내보내기 후 GitHub에 업로드하세요.</div>
 
   <!-- 비밀번호 모달 -->
   <div id="pwModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.95);z-index:9999;align-items:center;justify-content:center">
@@ -2250,11 +2263,11 @@
   </div>
   <div id="tab-war" class="tab-content">
     <h2>공성전 공략</h2>
+    <p class="subtitle">요일별 공성전 영웅 세팅 및 스킬 순서</p>
     <div style="display:flex;justify-content:flex-end;gap:8px;margin-bottom:0">
       <button class="add-strategy-btn" onclick="exportHTML()" style="background:var(--card-bg);border:1px solid var(--border2);color:var(--text-muted)">⬇ HTML 내보내기</button>
       <button class="add-strategy-btn" onclick="openStrategyModal()">+ 공략 추가</button>
     </div>
-    <p class="subtitle">요일별 공성전 영웅 세팅 및 스킬 순서</p>
 
     <!-- ★ 요일 탭 버튼 — 데이터 없는 요일은 class에 no-data 추가 -->
     <div class="day-tabs">
@@ -3761,8 +3774,7 @@
       document.getElementById('pwError').style.display = 'none';
       document.getElementById('pwModal').dataset.mode = '';
       if (mode === 'export') {
-        exportHTML();
-      } else {
+          } else {
         document.getElementById('noticeTextarea').value = document.getElementById('noticeText').textContent;
         document.getElementById('noticeDisplay').style.display = 'none';
         document.getElementById('noticeTextarea').style.display = '';
@@ -3793,6 +3805,7 @@
     document.getElementById('noticeSaveBtn').style.display = 'none';
     document.getElementById('noticeDisplay').style.display = '';
     document.querySelector('.notice-edit-btn').textContent = '수정';
+    showSaveToast();
   }
 
   document.querySelectorAll('.hero-filter-btn').forEach(btn => {
@@ -3930,7 +3943,7 @@
       document.getElementById('btn-save-strategy').textContent = '저장';
       closeStrategyModal();
       renderPresetOverrides();
-      return;
+        return;
     }
     if (editingStrategyId !== null) {
       const idx = saved.findIndex(x => x.id === editingStrategyId);
@@ -3945,6 +3958,7 @@
     document.getElementById('btn-save-strategy').textContent = '저장';
     closeStrategyModal();
     renderUserStrategies();
+    showSaveToast();
   }
   function deleteStrategy(id) {
     if (!confirm('이 공략을 삭제할까요?')) return;
@@ -4607,6 +4621,13 @@
     a.download = '세나리버스-공략위키.html';
     a.click();
     URL.revokeObjectURL(a.href);
+  }
+
+
+  function showSaveToast() {
+    const t = document.getElementById('saveToast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3500);
   }
 
   document.addEventListener('DOMContentLoaded', () => { renderUserStrategies(); renderPresetOverrides(); });
